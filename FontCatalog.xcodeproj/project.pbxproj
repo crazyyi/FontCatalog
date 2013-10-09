@@ -21,6 +21,10 @@
 		A32F57B918038CFF00EBB405 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32F579B18038CFE00EBB405 /* UIKit.framework */; };
 		A32F57C118038CFF00EBB405 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32F57BF18038CFF00EBB405 /* InfoPlist.strings */; };
 		A32F57C318038CFF00EBB405 /* FontCatalogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A32F57C218038CFF00EBB405 /* FontCatalogTests.m */; };
+		A32F57CE1803ACB300EBB405 /* text-align-right.png in Resources */ = {isa = PBXBuildFile; fileRef = A32F57CC1803ACB300EBB405 /* text-align-right.png */; };
+		A32F57CF1803ACB300EBB405 /* text-align-left.png in Resources */ = {isa = PBXBuildFile; fileRef = A32F57CD1803ACB300EBB405 /* text-align-left.png */; };
+		A32F57DD1804101F00EBB405 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = A32F57DC1804101F00EBB405 /* menu.png */; };
+		A32F57E218043CDC00EBB405 /* FCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32F57E118043CDC00EBB405 /* FCMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,11 @@
 		A32F57BE18038CFF00EBB405 /* FontCatalogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FontCatalogTests-Info.plist"; sourceTree = "<group>"; };
 		A32F57C018038CFF00EBB405 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A32F57C218038CFF00EBB405 /* FontCatalogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontCatalogTests.m; sourceTree = "<group>"; };
+		A32F57CC1803ACB300EBB405 /* text-align-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-align-right.png"; sourceTree = "<group>"; };
+		A32F57CD1803ACB300EBB405 /* text-align-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-align-left.png"; sourceTree = "<group>"; };
+		A32F57DC1804101F00EBB405 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		A32F57E018043CDC00EBB405 /* FCMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMenuViewController.h; sourceTree = "<group>"; };
+		A32F57E118043CDC00EBB405 /* FCMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCMenuViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,8 @@
 				A32F57A918038CFE00EBB405 /* Main.storyboard */,
 				A32F57AC18038CFE00EBB405 /* FCViewController.h */,
 				A32F57AD18038CFE00EBB405 /* FCViewController.m */,
+				A32F57E018043CDC00EBB405 /* FCMenuViewController.h */,
+				A32F57E118043CDC00EBB405 /* FCMenuViewController.m */,
 				A32F57AF18038CFE00EBB405 /* Images.xcassets */,
 				A32F579E18038CFE00EBB405 /* Supporting Files */,
 			);
@@ -126,6 +137,9 @@
 		A32F579E18038CFE00EBB405 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A32F57DC1804101F00EBB405 /* menu.png */,
+				A32F57CC1803ACB300EBB405 /* text-align-right.png */,
+				A32F57CD1803ACB300EBB405 /* text-align-left.png */,
 				A32F579F18038CFE00EBB405 /* FontCatalog-Info.plist */,
 				A32F57A018038CFE00EBB405 /* InfoPlist.strings */,
 				A32F57A318038CFE00EBB405 /* main.m */,
@@ -230,8 +244,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A32F57B018038CFE00EBB405 /* Images.xcassets in Resources */,
+				A32F57DD1804101F00EBB405 /* menu.png in Resources */,
 				A32F57A218038CFE00EBB405 /* InfoPlist.strings in Resources */,
 				A32F57AB18038CFE00EBB405 /* Main.storyboard in Resources */,
+				A32F57CE1803ACB300EBB405 /* text-align-right.png in Resources */,
+				A32F57CF1803ACB300EBB405 /* text-align-left.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32F57E218043CDC00EBB405 /* FCMenuViewController.m in Sources */,
 				A32F57A418038CFE00EBB405 /* main.m in Sources */,
 				A32F57A818038CFE00EBB405 /* FCAppDelegate.m in Sources */,
 				A32F57AE18038CFE00EBB405 /* FCViewController.m in Sources */,
@@ -335,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -368,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -461,6 +479,7 @@
 				A32F57C818038CFF00EBB405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A32F57C918038CFF00EBB405 /* Build configuration list for PBXNativeTarget "FontCatalogTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +488,7 @@
 				A32F57CB18038CFF00EBB405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
